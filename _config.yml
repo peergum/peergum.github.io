@@ -123,4 +123,4 @@ author:
 footer_links:
   - title: Feed
     url: atom.xml
-    icon: fab fa-rss
+    icon: fa fa-rss
