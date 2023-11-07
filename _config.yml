@@ -17,7 +17,7 @@
 remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "PeerGum"
+title: "Phil \"PeerGum\" Hilger"
 description: "Full-Stack and Firmware Development + DevOps"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: https://peergum.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -117,7 +117,7 @@ author:
       icon: fab fa-github-square
     - title: LinkedIn
       url: https://linkedin.com/in/philippehilger
-      icon: fab fa-linkedin-square
+      icon: fab fa-linkedin
 
 # Footer Links
 footer_links:

@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Peer-Z"
+date:   2023-11-06 21:46:00 -0500
+categories: Projects
+tags: projects p2p golang vuejs
+---
+So, I started the Peer-Z project in 2016, under the codename Peer-X, came back to it in 2020 for a refresh and
+minor refactoring, renaming it Peer-Z. Eventually I restarted working on the
+project this year, after another long pause.
+
+The project is about developing a peer-to-peer framework that would allow
+people to communicate easily beyond physical and virtual country barriers.
+
+Peer-Z also comes with some base services:
+- a mail-like app,
+- a profile app,
+- a local web relay,
+- a storage/data-sharing app,
+- a chat app,
+- a checkers game,
+- a chess game.
+
+Most of the project is still in development, and hasn't yet
+reached early deployment.
+
+Read more [here](https://peer-z.github.io)
