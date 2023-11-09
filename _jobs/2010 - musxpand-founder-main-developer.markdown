@@ -3,7 +3,7 @@ title:  "Founder and Main Developer (2010-2012)"
 start:   2010-06
 end:    2012-10
 year:   2010
-skills: [php, phpunit, html/css, mongodb, web scraping, fullcontact, facebook apis]
+skills: [php, wordpress, html/css3, jquery, mysql, aws, entrepreneur]
 logo:
   picture: /assets/images/musxpand-logo.png
   name: musxpand logo
