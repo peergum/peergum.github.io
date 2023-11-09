@@ -2,7 +2,7 @@
    Entries (Posts, collection documents, etc.)
    ========================================================================== */
 
-.entry {
+.entry, .job-entry {
   @include clearfix();
   position: relative;
 
@@ -21,7 +21,14 @@
   flex-direction: column;
 }
 
-.entry-title {
+.job-entry .entry-header {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.entry-title, .entry-job-title {
   margin-bottom: 0.5rem;
   font-family: $title-font-family;
   font-weight: $entry-title-weight;
@@ -43,12 +50,31 @@
   }
 }
 
+.entry-job-title {
+  a {
+    font-size: 18pt;
+  }
+}
+
 .entry-image {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+.entry-logo {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  display: inline-flex;
+  border: solid 1px black;
+  order: -1;
+  width: auto;
+  padding: 2px;
+  float: left;
+  margin-bottom: 0.5rem;
+  max-height: 45px
 }
 
 .entry-meta {
@@ -76,7 +102,7 @@
    ========================================================================== */
 
 .entries-list {
-  .entry {
+  .entry, .job-entry {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,6 +114,13 @@
   }
 
   .entry-title {
+    @include fluid-type($min-vw, $max-vw, 24px, 36px);
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .entry-job-title {
     @include fluid-type($min-vw, $max-vw, 24px, 36px);
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -151,6 +184,13 @@
   }
 
   .entry-title {
+    @include fluid-type($min-vw, $max-vw, 18px, 24px);
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .entry-job-title {
     @include fluid-type($min-vw, $max-vw, 18px, 24px);
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;

@@ -1,0 +1,14 @@
+{%- assign logo = page.logo | default: page.logos[0] | default: site.logo -%}
+{%- assign logo = site.data.logos[logo] | default: logo -%}
+
+<div class="page-logo h-card p-logo">
+  {%- if logo -%}
+    {%- if logo.picture contains "://" -%}
+      {%- assign logo_picture = logo.picture -%}
+    {%- else -%}
+      {%- assign logo_picture = logo.picture | relative_url -%}
+    {%- endif -%}
+    <img src="{{ logo_picture }}" class="logo-avatar u-photo" alt="{{ logo.name }}">
+  {%- endif -%}
+
+</div>
