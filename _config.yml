@@ -61,6 +61,7 @@ search_full_content: false # can have performance implications for large sites
 category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
 skill_archive_path: "/skills/#"
+location_archive_path: "/locations/#"
 jobs_archive_path: "/jobs/#"
 
 # Exclude from processing.
@@ -115,6 +116,14 @@ defaults:
       type: skills
     values:
       layout: skill
+      comments: false
+      share: false
+  # Locations defaults
+  - scope:
+      path: ""
+      type: locations
+    values:
+      layout: location
       comments: false
       share: false
 #  # Recipe defaults

@@ -98,7 +98,7 @@ layout: page
           {% if job.skills contains skill_name %}
             {% assign entry = job %}
             <div class="entries-{{ page.entries_layout | default: 'list' }}">
-                {% include entry.html %}
+                {% include job-entry.html %}
             </div>
           {% endif %}
         {% endfor %}

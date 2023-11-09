@@ -1,0 +1,28 @@
+{%- unless page.layout == 'collection' -%}
+{% if entry.locations %}
+<data class="entry-meta">
+    <div class="entry-locations">
+        <!--    <ul>-->
+        <!--    {%- for location in entry.locations -%}-->
+        <!--    <li>-->
+        <!--      {{ location }}-->
+        <!--    </li>-->
+        <!--    {%- endfor -%}-->
+        <!--    </ul>-->
+        <ul class="">
+            {%- for location in entry.locations -%}
+            <li class="">
+                {%- if site.location_archive_path -%}
+                <a href="{{ location | slugify | prepend: site.location_archive_path | relative_url }}"
+                   title="{{ site.data.text[site.locale].pages_locationed | default: 'Pages locationed' }} {{ location }}"
+                   rel="location">{{ location }}</a>
+                {%- else -%}
+                {{ location }}
+                {%- endif -%}
+            </li>
+            {%- endfor- %}
+        </ul>
+    </div>
+</data>
+{% endif %}
+{%- endunless -%}

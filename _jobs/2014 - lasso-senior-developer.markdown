@@ -8,7 +8,9 @@ skills: [java, maven, php, phpunit, symfony, eloquent, extjs, doctrine, rabbitmq
 logo:
   picture: /assets/images/eci-lasso-logo.png
   name: eci-lasso logo
-locations: [ "Richmond, BC", "Remote" ]
+locations: 
+  - "Richmond, BC"
+  - "Remote"
 ---
 I started at Lasso early 2014 as a Senior Development Engineer. My main task was to familiarize
 with the extensive codebase of Lasso CRM, a development based on PHP, Symfony, MySQL that is used by

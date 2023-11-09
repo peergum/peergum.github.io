@@ -7,7 +7,8 @@ skills: [php, phpunit, html/css, mongodb, web scraping, fullcontact, facebook ap
 logo:
   picture: /assets/images/trulioo-logo.png
   name: trulioo logo
-locations: [ "Vancouver, BC" ]
+locations: 
+  - "Vancouver, BC"
 ---
 Trulioo offered me my first full-time job in Vancouver, after I decided to 
 shut my MusXpand venture down, in 2012. Trulioo's software manager was initially

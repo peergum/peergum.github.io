@@ -1,0 +1,108 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign allLocations = site.jobs | map: "locations" | uniq | sort %}
+
+{% assign location_array = empty %}
+{% assign first_location = true %}
+{% for location in allLocations %}
+  {% assign cnt = 0 %}
+  {% for job in site.jobs %}
+    {% assign locations = job.locations %}
+    {% if locations contains location %}
+     {% assign cnt = cnt | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% assign one_location = location | append: "_" | append: cnt %}
+  {% if first_location == true %}
+    {% assign first_location = false %}
+  {% else %}
+    {% assign location_array = location_array | append: ":" %}
+  {% endif %}
+  {% assign location_array = location_array | append: one_location %}
+{% endfor %}
+{% assign location_array = location_array | split: ":" %}
+
+{% assign locations_max = 0 %}
+{% assign location_array_values = location_array %}
+{% for one_location in location_array_values %}
+  {% assign this_location = one_location | split: "_" %}
+  {% assign location_name = this_location | first %}
+  {% assign location_cnt = this_location | last %}
+  {% assign cnt = location_cnt | split: "|" | first | to_integer %}
+  {% if cnt > locations_max %}
+    {% assign locations_max = cnt %}
+  {% endif %}
+{% endfor %}
+
+{% assign location_names_array = "" %}
+{% assign location_counts = "" %}
+{% assign first_array_element = true %}
+{% for i in (1..locations_max) reversed %}
+  {% assign location_names = "" %}
+  {% assign first_location = true %}
+
+  {% for one_location in location_array %}
+  {% assign location = one_location | split: "_" %}
+   {% assign cnt = location[1] | to_integer %}
+    {% if cnt == i %}
+      {% if first_location %}
+        {% assign first_location = false %}
+      {% else %}
+        {% assign location_names = location_names | append: "_" %}
+      {% endif %}
+      {% assign location_names = location_names | append: location[0] %}
+    {% endif %}
+  {% endfor %}
+
+  {% if location_names != "" %}
+    {% assign location_names = location_names | split: "_" | sort | join: "_" %}
+
+    {% if first_array_element %}
+      {% assign first_array_element = false %}
+    {% else %}
+      {% assign location_names_array = location_names_array | append: "|" %}
+      {% assign location_counts = location_counts | append: "|" %}
+    {% endif %}
+    {% assign location_names_array = location_names_array | append: location_names %}
+    {% assign location_counts = location_counts | append: i %}
+  {% endif %}
+{% endfor %}
+
+{% assign location_names_array = location_names_array | split: "|" %}
+{% assign location_counts = location_counts | split: "|" %}
+
+<ul class="taxonomy-index">
+  {% for location_names in location_names_array %}
+    {% assign location_names_list = location_names | split: "_" %}
+    {% assign location_count = location_counts[forloop.index0] %}
+    {% for location_name in location_names_list %}
+      <li>
+        <a href="#{{ location_name | slugify }}">
+          <strong>{{ location_name }}</strong> <span class="taxonomy-count">{{ location_count }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+{% for location_names in location_array %}
+  {% assign location_names_list = location_names | split: "_" | first %}
+  {% for location_name in location_names_list %}
+    <section id="{{ location_name | slugify | downcase }}" class="taxonomy-section">
+      <h2 class="taxonomy-title">{{ location_name }}</h2>
+        {% for job in site.jobs %}
+          {% if job.locations contains location_name %}
+            {% assign entry = job %}
+            <div class="entries-{{ page.entries_layout | default: 'list' }}">
+                {% include job-entry.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    </section>
+  {% endfor %}
+{% endfor %}

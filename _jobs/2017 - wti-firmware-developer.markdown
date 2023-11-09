@@ -6,7 +6,9 @@ skills: [esp32, particle, microchip, atmel, stm, php]
 logo:
   picture: /assets/images/wti-logo.png
   name: WTI logo
-locations: [ "Remote", "Kitchener, ON" ]
+locations:
+ - "Remote"
+ - "Kitchener, ON"
 
 ---
 Since 2017, I've worked full-time as a frelancer, as the only firmware engineer for

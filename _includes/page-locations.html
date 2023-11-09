@@ -1,0 +1,15 @@
+{% if page.locations.size > 0 %}
+  <h3 class="page-taxonomies-title">{{ site.data.text[site.locale].locations | default: 'locations' }}</h3>
+  {% assign locations = page.locations | sort %}
+  <ul class="page-taxonomies">
+    {%- for location in locations -%}
+      <li class="page-taxonomy">
+        {%- if site.location_archive_path -%}
+          <a href="{{ location | slugify | prepend: site.location_archive_path | relative_url }}" title="{{ site.data.text[site.locale].pages_locationed | default: 'Pages locationed' }} {{ location }}" rel="location">{{ location }}</a>
+        {%- else -%}
+          {{ location }}
+        {%- endif -%}
+      </li>
+    {%- endfor- %}
+  </ul>
+{% endif %}

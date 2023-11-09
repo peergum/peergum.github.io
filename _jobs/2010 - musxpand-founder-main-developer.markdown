@@ -7,7 +7,9 @@ skills: [php, wordpress, html/css3, jquery, mysql, aws, entrepreneur]
 logo:
   picture: /assets/images/musxpand-logo.png
   name: musxpand logo
-locations: [ "Rio de Janeiro, BR", "Vancouver, BC" ]
+locations:
+  - "Rio de Janeiro, BR"
+  - "Vancouver, BC"
 
 ---
 I started working on my second venture, MusXpand (pronounced [mewzik'spend]), in 2010 right before leaving Brazil.
