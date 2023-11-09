@@ -1,0 +1,15 @@
+{% if page.skills.size > 0 %}
+  <h3 class="page-taxonomies-title">{{ site.data.text[site.locale].skills | default: 'skills' }}</h3>
+  {% assign skills = page.skills | sort %}
+  <ul class="page-taxonomies">
+    {%- for skill in skills -%}
+      <li class="page-taxonomy">
+        {%- if site.skill_archive_path -%}
+          <a href="{{ skill | slugify | prepend: site.skill_archive_path | relative_url }}" title="{{ site.data.text[site.locale].pages_skilled | default: 'Pages skilled' }} {{ skill }}" rel="skill">{{ skill }}</a>
+        {%- else -%}
+          {{ skill }}
+        {%- endif -%}
+      </li>
+    {%- endfor- %}
+  </ul>
+{% endif %}

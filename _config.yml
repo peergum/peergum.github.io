@@ -58,8 +58,10 @@ paginate_path: /page:num/
 search_full_content: false # can have performance implications for large sites
 
 # Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+skill_archive_path: "/skills/#"
+jobs_archive_path: "/jobs/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -81,10 +83,13 @@ plugins:
   - jekyll-paginate
 
 # Collections
-#collections:
-#  recipes:
-#    output: true
-#    permalink: /:collection/:path/
+collections:
+  jobs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
@@ -96,14 +101,30 @@ defaults:
       layout: post
       comments: true
       share: true
+  # Jobs defaults
+  - scope:
+      path: "_jobs"
+      type: jobs
+    values:
+      layout: job
+      comments: true
+      share: true
+  # Skills defaults
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: skill
+      comments: false
+      share: false
 #  # Recipe defaults
-#  - scope:
-#      path: "_recipes"
-#      type: recipes
-#    values:
-#      layout: post
-#      comments: true
-#      share: true
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
 
 # Site Author
 author:

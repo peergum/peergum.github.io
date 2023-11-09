@@ -16,6 +16,7 @@ en: &DEFAULT_EN
   tags: "Tags"
   pages_categorized: "Pages filed under"
   pages_tagged: "Pages tagged"
+  pages_with_skill: "Pages with skill"
   table_of_contents: "Table of Contents"
   results_found: "Result(s) found"
   share: "Share"

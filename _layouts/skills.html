@@ -1,0 +1,108 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign allSkills = site.jobs | map: "skills" | uniq | sort %}
+
+{% assign skill_array = empty %}
+{% assign first_skill = true %}
+{% for skill in allSkills %}
+  {% assign cnt = 0 %}
+  {% for job in site.jobs %}
+    {% assign skills = job.skills %}
+    {% if skills contains skill %}
+     {% assign cnt = cnt | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% assign one_skill = skill | append: "," | append: cnt %}
+  {% if first_skill == true %}
+    {% assign first_skill = false %}
+  {% else %}
+    {% assign skill_array = skill_array | append: ":" %}
+  {% endif %}
+  {% assign skill_array = skill_array | append: one_skill %}
+{% endfor %}
+{% assign skill_array = skill_array | split: ":" %}
+
+{% assign skills_max = 0 %}
+{% assign skill_array_values = skill_array %}
+{% for one_skill in skill_array_values %}
+  {% assign this_skill = one_skill | split: "," %}
+  {% assign skill_name = this_skill | first %}
+  {% assign skill_cnt = this_skill | last %}
+  {% assign cnt = skill_cnt | split: "|" | first | to_integer %}
+  {% if cnt > skills_max %}
+    {% assign skills_max = cnt %}
+  {% endif %}
+{% endfor %}
+
+{% assign skill_names_array = "" %}
+{% assign skill_counts = "" %}
+{% assign first_array_element = true %}
+{% for i in (1..skills_max) reversed %}
+  {% assign skill_names = "" %}
+  {% assign first_skill = true %}
+
+  {% for one_skill in skill_array %}
+  {% assign skill = one_skill | split: "," %}
+   {% assign cnt = skill[1] | to_integer %}
+    {% if cnt == i %}
+      {% if first_skill %}
+        {% assign first_skill = false %}
+      {% else %}
+        {% assign skill_names = skill_names | append: "," %}
+      {% endif %}
+      {% assign skill_names = skill_names | append: skill[0] %}
+    {% endif %}
+  {% endfor %}
+
+  {% if skill_names != "" %}
+    {% assign skill_names = skill_names | split: "," | sort | join: "," %}
+
+    {% if first_array_element %}
+      {% assign first_array_element = false %}
+    {% else %}
+      {% assign skill_names_array = skill_names_array | append: "|" %}
+      {% assign skill_counts = skill_counts | append: "|" %}
+    {% endif %}
+    {% assign skill_names_array = skill_names_array | append: skill_names %}
+    {% assign skill_counts = skill_counts | append: i %}
+  {% endif %}
+{% endfor %}
+
+{% assign skill_names_array = skill_names_array | split: "|" %}
+{% assign skill_counts = skill_counts | split: "|" %}
+
+<ul class="taxonomy-index">
+  {% for skill_names in skill_names_array %}
+    {% assign skill_names_list = skill_names | split: "," %}
+    {% assign skill_count = skill_counts[forloop.index0] %}
+    {% for skill_name in skill_names_list %}
+      <li>
+        <a href="#{{ skill_name | slugify }}">
+          <strong>{{ skill_name }}</strong> <span class="taxonomy-count">{{ skill_count }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+{% for skill_names in skill_array %}
+  {% assign skill_names_list = skill_names | split: "," | first %}
+  {% for skill_name in skill_names_list %}
+    <section id="{{ skill_name | slugify | downcase }}" class="taxonomy-section">
+      <h2 class="taxonomy-title">{{ skill_name }}</h2>
+        {% for job in site.jobs %}
+          {% if job.skills contains skill_name %}
+            {% assign entry = job %}
+            <div class="entries-{{ page.entries_layout | default: 'list' }}">
+                {% include entry.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    </section>
+  {% endfor %}
+{% endfor %}

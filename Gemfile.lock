@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
-    base64 (0.1.1)
+    base64 (0.2.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     em-websocket (0.5.3)
@@ -100,6 +100,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.2)
   jekyll-feed (~> 0.12)
+  jekyll-paginate
   jekyll-theme-so-simple
   minima (~> 2.5)
   tzinfo (>= 1, < 3)

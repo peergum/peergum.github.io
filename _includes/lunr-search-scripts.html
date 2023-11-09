@@ -52,6 +52,7 @@
       this.field('excerpt')
       this.field('categories')
       this.field('tags')
+      this.field('skills')
       this.ref('id')
 
       this.pipeline.remove(lunr.trimmer)
@@ -63,6 +64,7 @@
           excerpt: store[item].excerpt,
           categories: store[item].categories,
           tags: store[item].tags,
+          skills: store[item].skills,
           id: item
         })
       }

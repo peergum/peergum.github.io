@@ -203,10 +203,13 @@
 
 .layout--home,
 .layout--posts,
+.layout--jobs,
 .layout--categories,
 .layout--tags,
+.layout--skills,
 .layout--category,
 .layout--tag,
+.layout--skill,
 .layout--collection,
 .layout--search {
   .page-wrapper {
@@ -218,7 +221,7 @@
   }
 }
 
-.layout--post {
+.layout--post,.layout--job {
   .page-wrapper {
     @include breakpoint($large) {
       display: grid;
