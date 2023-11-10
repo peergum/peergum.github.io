@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<ul class="taxonomy-index">
+  {% assign projectsInYear = site.projects | group_by_exp: 'project', 'project.year' %}
+  {% for year in projectsInYear reversed %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy-count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign projectsByYear = site.projects | group_by_exp: 'project', 'project.year' %}
+{% for year in projectsByYear reversed %}
+  <section id="{{ year.name }}" class="taxonomy-section">
+    <h2 class="taxonomy-title">{{ year.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for entry in year.items %}
+        {% include project-entry.html %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

@@ -4,13 +4,14 @@ layout: page
 
 {{ content }}
 
-{% assign allSkills = site.jobs | map: "skills" | uniq | sort %}
+{% assign activities = site.jobs | concat: site.projects %}
+{% assign allSkills = activities | map: "skills" | uniq | sort %}
 
 {% assign skill_array = empty %}
 {% assign first_skill = true %}
 {% for skill in allSkills %}
   {% assign cnt = 0 %}
-  {% for job in site.jobs %}
+  {% for job in activities %}
     {% assign skills = job.skills %}
     {% if skills contains skill %}
      {% assign cnt = cnt | plus: 1 %}
@@ -94,7 +95,7 @@ layout: page
   {% for skill_name in skill_names_list %}
     <section id="{{ skill_name | slugify | downcase }}" class="taxonomy-section">
       <h2 class="taxonomy-title">{{ skill_name }}</h2>
-        {% for job in site.jobs %}
+        {% for job in activities %}
           {% if job.skills contains skill_name %}
             {% assign entry = job %}
             <div class="entries-{{ page.entries_layout | default: 'list' }}">

@@ -24,6 +24,11 @@
   margin-top: (-1 * $site-logo-height) / 2;
   margin-bottom: 2em;
   z-index: 1;
+  max-width: 400px;
+  background-color: red;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @include breakpoint($medium) {
     margin-top: (-1.5 * $site-logo-height) / 2;
@@ -40,18 +45,17 @@
 
 .page-image-caption {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1em;
   margin: 0 auto;
   padding: 0.25em 0.5em;
   color: #fff;
   font-size: 0.75rem;
   background: #000;
-  text-align: right;
+  text-align: center;
   z-index: 5;
   opacity: 0.5;
   border-radius: 4px 0 0 0;
-
+  justify-content: right;
   > * {
     margin: 0;
     padding: 0;
@@ -204,6 +208,7 @@
 .layout--home,
 .layout--posts,
 .layout--jobs,
+.layout--projects,
 .layout--categories,
 .layout--tags,
 .layout--skills,
@@ -223,7 +228,7 @@
   }
 }
 
-.layout--post,.layout--job {
+.layout--post,.layout--job,.layout--project {
   .page-wrapper {
     @include breakpoint($large) {
       display: grid;

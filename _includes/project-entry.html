@@ -1,0 +1,38 @@
+{% if entry.id %}
+  {% assign title = entry.title | markdownify | strip_html %}
+{% else %}
+  {% assign title = entry.title %}
+{% endif %}
+
+<article class="job-entry h-entry">
+  <header class="entry-header">
+    {% if entry.thumbnail %}
+      {% assign entry_image = entry.thumbnail.picture %}
+      {% unless entry_image contains '://' %}
+        {% assign entry_image = entry_image | relative_url %}
+      {% endunless %}
+      {% assign entry_image = entry_image | escape %}
+      <img class="entry-logo u-photo" src="{{ entry_image }}" alt="entry.thumbnail.name">
+    {% endif %}
+    <h3 class="entry-job-title p-name">
+      {% if entry.link %}
+        <a class="u-bookmark-of" href="{{ entry.link }}">{{ title }}</a> <a href="{{ entry.url | relative_url }}" rel="bookmark"><span class="link-arrow">&rarr;</span></a>
+      {% else %}
+        <a href="{{ entry.url | relative_url }}" rel="bookmark">{{ title }}</a>
+      {% endif %}
+    </h3>
+  </header>
+  {% unless page.show_excerpts == false %}
+    <div class="entry-excerpt p-summary">
+      {% if entry.excerpt %}
+        {{ entry.excerpt | markdownify }}
+      {% endif %}
+    </div>
+  {% endunless %}
+  {% if site.read_time or entry.locations and page.layout != 'collection' %}
+    <footer class="entry-meta">
+      {% if site.read_time %}{% include read-time.html %}{% endif %}
+      {% if entry.locations %}{% include entry-locations.html %}{% endif %}
+    </footer>
+  {% endif %}
+</article>

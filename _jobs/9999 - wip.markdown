@@ -1,7 +1,6 @@
 ---
 title:  "Work in progress"
-start: 2023
-year: 2023
+year: (...)
 skills: []
 locations: []
 logo:

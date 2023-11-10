@@ -1,0 +1,32 @@
+---
+title:  "BBS (1994-1995)"
+start:   1994
+end:    1995
+year:   1994
+skills: []
+#logo:
+#  picture: /assets/images/musxpand-logo.png
+#  name: musxpand logo
+locations:
+  - "Paris, FR"
+thumbnail:
+  picture: /assets/images/bbs.png
+  name: BBS
+image:
+  path: /assets/images/bbs.png
+  name: screenshot of BBS home page
+  caption: "BBS home page screenshot, author: Michael L. Umbricht"
+---
+As a recent father, but still quite vested in computers and networks as hobbies, and still without Internet available,
+I decided to build a BBS and connect it to other BBSes in the area, to exchange information and news. <b>(More)</b>
+
+I used the AT286 Computer my friend Fabien had gotten us for that development project while in ESIGELEC[^esigelec] that
+was pretty much idle at the time, and installed [Maximus BBS](https://en.wikipedia.org/wiki/Maximus_(BBS)) on it. After
+some configuration the BBS was up and running. Server was called `La P'tite Famille` and was running as a point 
+(polling from and posting to relays) than as relay itself, due to the requirements for a relay to be able to connect to
+other relays on a separate phone line, while connecting one or more users on distinct lines.
+
+Even though that project did not last very long, and was soon supplanted by an actual website, it was still a lot of
+fun to set up and maintain.
+
+[^esigelec]: [ESIGELEC](https://en.esigelec.fr) was my Electrical Engineering University in Rouen, France.

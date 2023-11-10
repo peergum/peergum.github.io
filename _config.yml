@@ -63,6 +63,7 @@ tag_archive_path: "/tags/#"
 skill_archive_path: "/skills/#"
 location_archive_path: "/locations/#"
 jobs_archive_path: "/jobs/#"
+projects_archive_path: "/projects/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -88,6 +89,9 @@ collections:
   jobs:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
   recipes:
     output: true
     permalink: /:collection/:path/
@@ -110,6 +114,14 @@ defaults:
       layout: job
       comments: true
       share: true
+  # Projects defaults
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
+      comments: true
+      share: true
   # Skills defaults
   - scope:
       path: ""
@@ -127,13 +139,13 @@ defaults:
       comments: false
       share: false
 #  # Recipe defaults
-  - scope:
-      path: "_recipes"
-      type: recipes
-    values:
-      layout: post
-      comments: true
-      share: true
+#  - scope:
+#      path: "_recipes"
+#      type: recipes
+#    values:
+#      layout: post
+#      comments: true
+#      share: true
 
 # Site Author
 author:

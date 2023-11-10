@@ -1,0 +1,13 @@
+{%- assign thumbnail = page.thumbnail -%}
+
+<div class="page-logo h-card p-logo">
+  {%- if thumbnail -%}
+    {%- if thumbnail.picture contains "://" -%}
+      {%- assign thumbnail_picture = thumbnail.picture -%}
+    {%- else -%}
+      {%- assign thumbnail_picture = thumbnail.picture | relative_url -%}
+    {%- endif -%}
+    <img src="{{ thumbnail_picture }}" class="logo-avatar u-photo" alt="{{ thumbnail.name }}">
+  {%- endif -%}
+
+</div>
