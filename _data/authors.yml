@@ -3,7 +3,7 @@
 
 PeerGum:
   name: Phil "PeerGum" Hilger
-  picture: /images/phil-small.png
+  picture: /assets/images/phil-small.png
   links:
     - title: GitHub
       url: https://github.com/peergum
