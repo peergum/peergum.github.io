@@ -4,5 +4,8 @@ start: 2023
 year: 2023
 skills: []
 locations: []
+logo:
+    picture: /assets/images/wip-logo.png
+    name: Work in progress
 ---
 This is a work in progress... All my work experiences will be here shortly, and searchable by skills. 
