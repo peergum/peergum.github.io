@@ -1,0 +1,21 @@
+---
+title:  "n0vel1st (2022)"
+start:   2022
+year:   2022
+skills:
+  - esp32
+  - raspberry pi
+#  - php
+#  - laravel
+#  - vuejs
+locations:
+  - "Kitchener, ON"
+thumbnail:
+  picture: /assets/images/n0vel1st-logo.png
+  name: n0vel1st logo
+#image:
+#  path: /assets/images/voyages.jpg
+#  name: book cover
+#  caption: "Book cover from 'voyages, poèmes et textes en prose'"
+---
+(coming soon)
