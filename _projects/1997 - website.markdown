@@ -12,7 +12,8 @@ skills:
 #  picture: /assets/images/musxpand-logo.png
 #  name: musxpand logo
 locations:
-  - "Rouen, FR"
+  - "Nice, FR"
+  - "Atlanta, GA"
 thumbnail:
   picture: /assets/images/geocities-logo.png
   name: geocities logo
