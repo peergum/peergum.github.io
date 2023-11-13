@@ -25,7 +25,7 @@ thumbnail:
 In 1997, I had already gotten familiarized a lot with the Internet, after 3 years working at CEGEDIM with dial-up
 modem connections, and currently working at SITA/Equant, a giant worldwide telecom provider present in more than 220
 countries at the time, so strong of my experience with HTML/CSS, I started building my own website on
-[GeoCities](https://en.wikipedia.org/wiki/GeoCities) <b>(More)</b>
+[GeoCities](https://en.wikipedia.org/wiki/GeoCities).
 
 The site was relatively simple, but used some forms and CGI and was showing mostly pictures of the area (Grasse, in the South of
 France) and a gallery of paintings from my then-wife. I was overall pretty happy of the design, even though to today's eyes it

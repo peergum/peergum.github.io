@@ -1,0 +1,16 @@
+{% if page.images.size > 0 %}
+  {% assign page_image = page.images[0] | default: page.image %}
+  {% assign page_image_path = page.images[0].path | default: page.images[0] | default: page.image.path | default: page.image %}
+  {% unless page_image.path contains '://' %}
+    {% assign page_image.path = page_image.path | relative_url %}
+  {% endunless %}
+  {% assign page_image_path = page_image_path | escape %}
+  {% assign page_image_name = page_image.name | default: "picture" %}
+
+  <div class="page-feature">
+    <img src="{{ page_image_path }}" class="entry-feature-image u-photo" alt="{{ page_image_name }}" {% unless site.logo %}style="margin-top: 0;"{% endunless %}>
+    {% if page_image.caption %}
+      <div class="page-feature-caption">{{ page_image.caption | markdownify }}</div>
+    {% endif %}
+  </div>
+{% endif %}

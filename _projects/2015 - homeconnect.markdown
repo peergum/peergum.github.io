@@ -9,10 +9,10 @@ locations:
 thumbnail:
   picture: /assets/images/homeconnect-logo.png
   name: homeconnect logo
-#image:
-#  path: /assets/images/voyages.jpg
-#  name: book cover
-#  caption: "Book cover from 'voyages, poèmes et textes en prose'"
+images:
+  - path: /assets/images/homeconnect-1.png
+    name: Homeconnect, lead capture screen
+    caption: "Homeconnect, lead capture screen"
 ---
 After my GarageDoor project I started considering building several devices that would be interconnected through a
 central device, and would control doors or lights.

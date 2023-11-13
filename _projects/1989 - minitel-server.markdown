@@ -17,15 +17,15 @@ locations:
 thumbnail:
   picture: /assets/images/minitel-thb.png
   name: minitel
-image:
-  path: /assets/images/minitel.jpg
-  name: photo of a minitel
-  caption: "Alcatel Télic Minitel - CnAM 44045, picture by Rama source: Wikimedia Commons"
+images:
+  - path: /assets/images/minitel.jpg
+    name: photo of a minitel
+    caption: "Alcatel Télic Minitel - CnAM 44045, picture by Rama source: Wikimedia Commons"
 
 ---
 This project started after I discovered you could run a minitel server out of your Atari ST computer, just needing the
 Minitel[^minitel], a free terminal France Telecom was distributing at the time to phone subscribers, and a simple RS232 cable to
-connect it to the computer. <b>(More)</b>
+connect it to the computer.
 
 I got 3"5 floppies[^floppy] from other students from ESIGELEC[^esigelec] with "Einstel" on them, some code I could use to run the server, 
 and I started building my server pages. In no time, "Sook" was born and accepting dial-up calls.

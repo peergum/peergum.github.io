@@ -12,13 +12,13 @@ locations:
 thumbnail:
   picture: /assets/images/bbs.png
   name: BBS
-image:
-  path: /assets/images/bbs.png
-  name: screenshot of BBS home page
-  caption: "BBS home page screenshot, author: Michael L. Umbricht"
+images:
+  - path: /assets/images/bbs.png
+    name: screenshot of BBS home page
+    caption: "BBS home page screenshot, author: Michael L. Umbricht"
 ---
 As a recent father, but still quite vested in computers and networks as hobbies, and still without Internet available,
-I decided to build a BBS and connect it to other BBSes in the area, to exchange information and news. <b>(More)</b>
+I decided to build a BBS and connect it to other BBSes in the area, to exchange information and news.
 
 I used the AT286 Computer my friend Fabien had gotten us for that development project while in ESIGELEC[^esigelec] that
 was pretty much idle at the time, and installed [Maximus BBS](https://en.wikipedia.org/wiki/Maximus_(BBS)) on it. After

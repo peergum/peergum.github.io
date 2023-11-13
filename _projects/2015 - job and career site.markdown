@@ -9,10 +9,19 @@ locations:
 thumbnail:
   picture: /assets/images/pj-jobs.png
   name: peerjuice jobs logo
-#image:
-#  path: /assets/images/voyages.jpg
-#  name: book cover
-#  caption: "Book cover from 'voyages, poèmes et textes en prose'"
+images:
+  - path: /assets/images/pj-jobs-screenshot1.png
+    name: Job search page
+    caption: "Job search page"
+  - path: /assets/images/pj-jobs-screenshot2.png
+    name: Job search page full
+    caption: "Job search page (entire)"
+  - path: /assets/images/pj-jobs-screenshot3.png
+    name: Job listing
+    caption: "Job listing"
+  - path: /assets/images/pj-jobs-full-listing.png
+    name: Job listing (full window)
+    caption: "Job listing (full window)"
 ---
 While working at Lasso, I realized that LinkedIn wasn't so useful as it could be for job seekers. Something I didn't
 like with LinkedIn was, most of recommendations were useless, just giving unrealistic expectations of candidates, 
