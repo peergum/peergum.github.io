@@ -4,7 +4,12 @@ title: "Garagedoor (2014)"
 start: 2014
 end: 2014
 year: 2014
-skills: [ ]
+skills:
+  - Particle Photon
+  - Firmware
+  - C/C++
+  - IOS App
+  - XCode
 locations:
   - "Vancouver, BC"
 thumbnail:

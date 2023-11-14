@@ -3,7 +3,14 @@ title:  "PeerJuice Jobs (2015)"
 start:   2015
 end:    2015
 year:   2015
-skills: []
+skills:
+  - PHP
+  - Symphony
+  - Javascript
+  - jQuery
+  - HTML/CSS
+  - AWS EC2
+  - AWS RDS
 locations:
   - "Vancouver, BC"
 thumbnail:

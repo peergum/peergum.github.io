@@ -6,8 +6,10 @@ year:   2016
 skills:
   - PHP
   - Laravel
+  - AWS EC2
+  - AWS RDS
   - VueJS
-  - Google Map & Geolocation APIs
+  - Google Maps APIs
 locations:
   - "Vancouver, BC"
 thumbnail:

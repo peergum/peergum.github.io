@@ -3,7 +3,14 @@ title:  "HomeConnect (2015)"
 start:   2015
 end:    2015
 year:   2015
-skills: []
+skills:
+  - PHP
+  - Bootstrap
+  - Javascript
+  - jQuery
+  - HTML/CSS
+  - AWS EC2
+  - AWS RDS
 locations:
   - "Vancouver, BC"
 thumbnail:

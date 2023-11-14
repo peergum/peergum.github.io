@@ -11,6 +11,7 @@ skills:
   - PHP
   - Javascript
   - jQuery
+  - HTML/CSS
   - Google Maps APIs
   - Particle Electron
   - C/C++
