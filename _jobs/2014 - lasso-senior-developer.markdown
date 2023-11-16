@@ -15,7 +15,7 @@ locations:
 I started at Lasso early 2014 as a Senior Development Engineer. My main task was to familiarize
 with the extensive codebase of Lasso CRM, a development based on PHP, Symfony, MySQL that is used by
 real estate industry to track leads for real estates companies, and connect them with building
-development projects and apps. <b>(More...)</b>
+development projects and apps.
 
 Just after a few months working at the company, I became one of the major and faster troubleshooting developer in
 the team, thanks to my analytical skills. I then progressively took on some improvement tasks, and

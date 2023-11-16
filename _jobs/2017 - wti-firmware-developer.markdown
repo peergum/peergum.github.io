@@ -15,7 +15,6 @@ Since 2017, I've worked full-time as a frelancer, as the only firmware engineer 
 Waterloo Technical Inc, a small business in Kitchener/Waterloo, Ontario. I've collaborated with remote electrical
 engineers and used my own skills in electrical engineering to define the schematics of a dozen products, then developed
 the complete firmware for these devices either from scratch or taking advantage of existing libraries.
- <b>(More...)</b>
 
 Many of these
 explored technologies that I was not used to develop for, like <a href="https://en.wikipedia.org/wiki/LoRa" target="_blank">LoRa</a>,

@@ -15,7 +15,7 @@ locations:
 I started working on my second venture, MusXpand (pronounced [mewzik'spend]), in 2010 right before leaving Brazil.
 The idea was to develop a business that would help indie artists, initially musicians, to distribute their art to their
 fan, through subscriptions. The premise was quite disruptive: why only get a few cents from music distributors, if you can
-make most of the money directly from your actual fans and provide them a better and closer service? <b>(More)</b>
+make most of the money directly from your actual fans and provide them a better and closer service?
 
 Based on my experience of CMS at the time, and in particular Joomla and Wordpress, I decided to write the whole site from
 scratch, using a similar core skeleton to Wordpress' one. After designing a whole UI using uncommon technologies like

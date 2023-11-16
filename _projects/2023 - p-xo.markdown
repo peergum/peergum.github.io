@@ -1,0 +1,18 @@
+---
+title:  "\"p-xo\" (2023-)"
+start:   2023
+year:   2023
+skills:
+  - php
+  - laravel
+  - vuejs
+  - jetstream
+  - inertia
+  - aws
+locations:
+  - "Kitchener, ON"
+thumbnail:
+  picture: /assets/images/wip-logo.png
+  name: work-in-progress logo
+---
+My latest project... work-in-progress, description coming soon.

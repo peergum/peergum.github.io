@@ -27,6 +27,7 @@
       {% if entry.excerpt %}
         {{ entry.excerpt | markdownify }}
       {% endif %}
+      <div class="more-link">More...</div>
     </div>
   {% endunless %}
   {% if site.read_time or entry.locations and page.layout != 'collection' %}

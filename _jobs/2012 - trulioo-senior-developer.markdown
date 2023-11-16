@@ -16,7 +16,7 @@ interested in my ability
 to do web scraping, in order to capture identity information on the web to
 store into databases and also to be able to mimic an existing site and add
 user identification features in it, for a demonstration of Trulioo Identification
-APIs. <b>(More)</b>
+APIs.
 
 My knowledge and experience with AWS EC2 and networking technology quickly made me the
 in-house cloud specialist and devops engineer, at a time where "devops" was merely
