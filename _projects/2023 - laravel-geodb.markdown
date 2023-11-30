@@ -22,7 +22,7 @@ address selectors to users and so, I decided to try and build my own package.
 
 I had used the free [GeoNames](http://www.geonames.org) site in the past to retrieve big files with the necessary
 information, but I still checked a few other providers to be sure. Most of them were requiring an upfront payment to
-use the more complete sources of information, and were also constaining buyers to use their own code to decode the
+use the more complete sources of information, and were also constraining buyers to use their own code to decode the
 database files, which wasn't the way I wanted to go, so I stayed with GeoNames and started building my package.
 
 The objectives for the package were as follows:

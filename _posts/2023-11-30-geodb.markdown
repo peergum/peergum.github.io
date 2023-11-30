@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Laravel GeoDB"
+date:   2023-11-30 16:17:00 -0500
+categories: Projects
+tags: projects php laravel packagist geonames vuejs
+---
+I just released Laravel GeoDB version 1.0.0, an opensource package to help developers handle cities, states and countries in their Laravel apps.
+
+Read more about it [here](/projects/2023%20-%20laravel-geodb).
+
+Package provides data for:
+- 252 countries
+- 50K states/regions
+- 4.6M cities
+- all with population, elevation, currency, and latitude/longitude information
+- updatable on-demand with new data updates from GeoNames
+
+It is available open-source on:
+- GitHub: https://github.com/peergum/geodb
+- Packagist: https://packagist.org/packages/peergum/geodb
+
+Enjoy!
