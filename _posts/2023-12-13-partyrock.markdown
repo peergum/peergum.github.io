@@ -155,7 +155,7 @@ $str = 'ab123$%^xyz';
 echo reverseAlpha($str); // 'zy123$%^xba'
 ```
 Note that I changed the example to have a group of 2 alphabetic characters and a group of 3 to be sure things work
-as expected.
+as expected. And voilà! It worked.
 
 ## Summary of it all
 
