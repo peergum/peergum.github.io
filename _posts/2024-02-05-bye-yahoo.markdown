@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Bye, Yahoo!"
+date:   2024-02-05 13:49:00 -0500
+categories:
+  - Email Services
+  - Yahoo!
+tags: closing yahoo! account email
+---
+I opened my first decent email account in 1997, on Yahoo!, right after letting go of hosted email at CompuServe, which I had to
+check in a browser, and installed Netscape Mail to read it directly using POP3 at the time
+(I used IMAP4 later, for more convenience)
+
+At the time, I thought Yahoo! was the best search engine, and their email could be checked online or offline (after retrieval).
+Google was still in its infancy and Gmail only appeared in 2004.
+
+Yahoo! served me well for the time I had it (more than 25 years!), but I eventually moved to Gmail around 2008. From then I
+kept both accounts since I still used accounts that were registered using Yahoo! Mail.
+
+But for the last decade, Yahoo! has mostly provided me with SPAM, more SPAM, and even more SPAM. To be honest, 99% of the
+SPAM I get is from Yahoo! So, I assume my account ended in far too many leaks, that were sold to spammers eveywhere.
+
+So, after updating the last few accounts using my Yahoo! email address, I decided to close that account, with a small
+virtual tear.
+
+So long, Yahoo!
