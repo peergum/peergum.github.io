@@ -23,12 +23,14 @@
     </h3>
   </header>
   {% unless page.show_excerpts == false %}
-    <div class="entry-excerpt p-summary">
+  <div class="entry-excerpt-block">
+  <div class="entry-excerpt p-summary">
       {% if entry.excerpt %}
         {{ entry.excerpt | markdownify }}
       {% endif %}
       <div class="more-link">More...</div>
     </div>
+  </div>
   {% endunless %}
   {% if site.read_time or entry.locations and page.layout != 'collection' %}
     <footer class="entry-meta">

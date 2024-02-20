@@ -31,6 +31,9 @@
 .entry-excerpt-block {
   display: flex;
   flex-direction: row;
+  padding: 10px;
+  /*box-shadow: 0 0 1px black;*/
+  background-color: #f7f7f7;
 }
 
 .entry-thumbnail {
@@ -217,6 +220,7 @@
 
   .more-link {
     margin-top: -1em;
+    text-align: right;
 
     a {
       text-decoration: none;
