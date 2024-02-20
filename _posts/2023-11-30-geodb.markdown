@@ -1,9 +1,7 @@
 ---
-layout: post
-title:  "Laravel GeoDB"
-date:   2023-11-30 16:17:00 -0500
-categories: Projects
-tags: projects php laravel packagist geonames vuejs
+image:
+  thumbnail: /assets/images/laravel-geodb.png
+  name: "Laravel-GeoDB logo"
 ---
 I just released Laravel GeoDB version 1.0.0, an opensource package to help developers handle cities, states and countries in their Laravel apps.
 

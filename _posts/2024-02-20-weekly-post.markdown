@@ -7,6 +7,9 @@ categories:
   - Coding
   - Jobs
 tags: weekly activity coding learning golang java AWS CloudFormation Lambda
+image:
+  thumbnail: /assets/images/squirrel.jpg
+  name: "learning squirrel"
 images:
   - path: /assets/images/squirrel.jpg
     name: "learning squirrel"

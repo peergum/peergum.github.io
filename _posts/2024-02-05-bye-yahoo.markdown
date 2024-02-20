@@ -6,6 +6,13 @@ categories:
   - Email Services
   - Yahoo!
 tags: closing yahoo! account email
+image:
+  thumbnail: /assets/images/yahoo-artistic.jpg
+  name: "artistic AI-generated version of Yahoo's logo"
+images:
+  - path: /assets/images/yahoo-artistic.jpg
+    name: "artistic AI-generated version of Yahoo's logo"
+    caption: "Artistic BingAI-generated version of Yahoo's logo"
 ---
 I opened my first decent email account in 1997, on Yahoo!, right after letting go of hosted email at CompuServe, which I had to
 check in a browser, and installed Netscape Mail to read it directly using POP3 at the time

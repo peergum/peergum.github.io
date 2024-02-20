@@ -4,6 +4,9 @@ title:  "Peer-Z"
 date:   2023-11-06 21:46:00 -0500
 categories: Projects
 tags: projects p2p golang vuejs
+image:
+  thumbnail: /assets/images/z-logo-500.png
+  name: "Laravel-GeoDB logo"
 ---
 So, I started the Peer-Z project in 2016, under the codename Peer-X, came back to it in 2020 for a refresh and
 minor refactoring, renaming it Peer-Z. Eventually I restarted working on the

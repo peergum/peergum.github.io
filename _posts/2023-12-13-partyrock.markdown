@@ -6,6 +6,13 @@ categories:
   - Coding Skills
   - AI
 tags: coding skills PHP PartyRock AI
+image:
+  thumbnail: /assets/images/partyrock.jpg
+  name: "artistic AI-generated representation of AWS' PartyRock"
+images:
+  - path: /assets/images/partyrock.jpg
+    name: "artistic AI-generated representation of AWS' PartyRock"
+    caption: "artistic AI-generated representation of AWS' PartyRock"
 ---
 Using #PartyRock, the new app generator from Amazon.com, I tried to "create an app that would show the best algorithm in PHP to solve a specific problem, and the syntax of the PHP functions used".
 

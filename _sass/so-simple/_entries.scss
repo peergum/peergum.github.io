@@ -28,6 +28,16 @@
   align-items: center;
 }
 
+.entry-excerpt-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.entry-thumbnail {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
 .entry-title, .entry-job-title, .entry-project-title {
   margin-bottom: 0.5rem;
   font-family: $title-font-family;
