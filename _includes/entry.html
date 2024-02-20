@@ -14,7 +14,13 @@
       {% endif %}
     </h3>
   </header>
-  {% unless page.show_excerpts == false %}
+  {% if page.show_excerpts == true %}
+    {% if site.read_time or entry.date and page.layout != 'collection' %}
+  <div class="entry-meta-top">
+      {% if site.read_time %}{% include read-time.html %}{% endif %}
+      {% if entry.date %}{% include entry-date.html %}{% endif %}
+  </div>
+    {% endif %}
   <div class="entry-excerpt-block">
     {% if entry.image.thumbnail %}
     {% assign entry_image = entry.image.thumbnail %}
@@ -31,11 +37,12 @@
       <div class="more-link">More...</div>
     </div>
   </div>
-  {% endunless %}
-  {% if site.read_time or entry.date and page.layout != 'collection' %}
+  {% else %}
+    {% if site.read_time or entry.date and page.layout != 'collection' %}
     <footer class="entry-meta">
       {% if site.read_time %}{% include read-time.html %}{% endif %}
       {% if entry.date %}{% include entry-date.html %}{% endif %}
     </footer>
+    {% endif %}
   {% endif %}
 </article>
