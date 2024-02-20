@@ -4,7 +4,7 @@ layout: default
 
 <main id="main" class="main-content" aria-label="Content">
   <article class="h-entry">
-    {% include page-image.html %}
+    {% include page-feature.html %}
     <div class="page-wrapper">
       <header class="page-header">
         {% assign title = page.title | markdownify | strip_html %}
@@ -24,6 +24,8 @@ layout: default
       <div class="page-content">
         <div class="e-content">
           {{ content }}
+
+          {% include page-images.html %}
         </div>
 
         {% if page.share %}
