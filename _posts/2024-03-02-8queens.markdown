@@ -16,13 +16,31 @@ images:
     name: "AI generated chess picture"
     caption: "AI generated chess picture"
 ---
+**updated on March 3**: added some explanations on how the code works.
+
 Last week, or was it the week before that, I read on LinkedIn about a well-known problem: the 8-queens.
 You have to place 8 queens on a chess board, in positions where no queen can capture another one.
 
 After a quick thinking, I determined that the simplest method was likely through a recursion, and I
 started coding it in Go.
 
-After a few bugs and some troubleshooting, I eventually got some code running that gave me the 92
+Some obvious considerations:
+- there can only be one queen per row, and one per column
+- there can only be one queen per diagonal
+
+So the recursion works this way:
+- start from row 0 column 0 (considering a 0-based 8x8 array)
+- if position is empty (value 0), mark the position with a 1 and mark all positions that can't be used anymore with -1,
+- if position is either 1 or 0, go back to previous row, next column, if possible
+- then iterate to next row, column 0 (recursion)
+- if we reached last row (7), then we're done, show result, go back to next column of previous row
+- iterate with next column
+
+With this method, if no position in a row works, we won't go down the other rows, whih saves time
+and effort. Also, the method must clean the table and redraw current state, each time we do another
+attempt, so we need to store the current position to do the redraws (queens and unavailable positions)
+
+After a few bugs and some troubleshooting (mostly related to the cleaning/redraw process) , I eventually got some code running that gave me the 92
 possible positions for the queens, in 3.9 ms, without any optimization and no representation of
 the results, just the count of results.
 
@@ -1074,5 +1092,7 @@ Benchmark 1: ./main
 ```
 
 Some optimization of this code are possible, since many solutions are symmetries, horizontal or vertical, or rotations of others.
+Also the cleaning/redrawing process could be optimized a way we don't always redraw the whole thing,
+but rather just remove the last added queen/unavailable positions.
 
 I'll leave these optimizations for later or someone else. Many other projects to tackle first...
