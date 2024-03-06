@@ -16,7 +16,7 @@ images:
     name: "AI generated grammar parser... go figure!"
     caption: "AI generated grammar parser... go figure!"
 ---
-Last week has been more of the same: jobs, taxes, ANTLR v.4, but I also some interesting programming
+Last week has been more of the same: jobs, taxes, ANTLR v.4, but I also spent time on some interesting programming
 challenge, the **one billion row challenge** AKA "1BRC"; I'll get there in a bit.
 
 Most of LinkedIn readings are boring: self-promotion, big companies marketing, people complaining,
@@ -33,11 +33,11 @@ I just go to Bing.com. I used to hate Bing, but lately I have to say I've been i
 progress, as long as you don't use their search engine; unfortunately, their self-censoring is giving
 either no answer or just dumb ones on many occurrences. But for AI genrated pictures, Bing is THE
 site to go. I'm not sure how many AI pictures you can generate for free in a day, but as far as I'm
-concerned, I can seem to get a few ones for my occasional posts so that's perfect.
+concerned, I seem to be able to get a few for my occasional posts so that's perfect.
 
 But perfection in the AI world is quite relative. First, unless you ask specifically for certain words,
 the generated picture will likely have scrambled <s>eggs</s> words. Also, most things generated are
-usually highly disturbing, a combination of impossible, fantastic, ingenious, weird and frankly crazy.
+usually highly disturbing: a combination of impossible, fantastic, ingenious, weird, and frankly crazy.
 For instance, today I asked Bing to generate the "picture of a grammar parser". Yes, I know: what 
 could a grammar parser even be? Honestly, I don't know, but I was curious to see what AI would think
 it is. And to my surprise, Bing generated four pictures of **colored birds standing on books**...
