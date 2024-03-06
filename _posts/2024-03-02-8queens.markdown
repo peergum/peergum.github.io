@@ -7,7 +7,7 @@ categories:
   - Coding
   - Practice
   - Go
-tags: activity coding learning golang practice "8 queens"
+tags: activity coding learning golang practice 8_queens
 image:
   thumbnail: /assets/images/chess.jpg
   name: "AI generated chess picture"
