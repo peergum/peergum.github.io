@@ -4,7 +4,7 @@ start:   2020
 year:   2020
 skills:
   - Golang
-  - VueJS
+  - vue.js
   - HTML/CSS
   - Javascript
   - jQuery

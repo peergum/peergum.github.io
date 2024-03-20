@@ -4,11 +4,11 @@ start:   2023
 year:   2023
 skills:
   - php
-  - laravel
-  - vuejs
+  - Laravel
+  - vue.js
   - jetstream
-  - inertia
-  - aws
+  - Inertia.js
+  - AWS
 locations:
   - "Kitchener, ON"
 thumbnail:

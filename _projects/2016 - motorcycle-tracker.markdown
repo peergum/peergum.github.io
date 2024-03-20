@@ -8,7 +8,7 @@ skills:
   - AWS API Gateway
   - AWS Dynamo DB
   - AWS EC2
-  - PHP
+  - php
   - Javascript
   - jQuery
   - HTML/CSS

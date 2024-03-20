@@ -5,8 +5,8 @@ end:    2021
 year:   2021
 skills:
   - php
-  - laravel
-  - vuejs
+  - Laravel
+  - vue.js
 locations:
   - "Kitchener, ON"
 thumbnail:

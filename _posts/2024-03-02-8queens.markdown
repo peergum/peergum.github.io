@@ -6,7 +6,6 @@ categories:
   - Learning
   - Coding
   - Practice
-  - Go
 tags: activity coding learning golang practice 8_queens
 image:
   thumbnail: /assets/images/chess.jpg

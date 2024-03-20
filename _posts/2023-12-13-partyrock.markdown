@@ -3,7 +3,7 @@ layout: post
 title:  "PartyRock, and why AI is not ready yet to replace coders"
 date:   2023-12-13 11:33:00 -0500
 categories:
-  - Coding Skills
+  - Coding
   - AI
 tags: coding skills PHP PartyRock AI
 image:

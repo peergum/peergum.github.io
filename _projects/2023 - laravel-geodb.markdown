@@ -4,9 +4,9 @@ start:   2023
 year:   2023
 skills:
   - php
-  - laravel
-  - vuejs
-  - inertia
+  - Laravel
+  - vue.js
+  - Inertia.js
   - composer
   - packagist 
 locations:

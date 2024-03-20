@@ -22,7 +22,7 @@ Last week (actually possibly starting with the week before that), along with con
 I decided to make a few changes in my activities. Some internal restructuring if you will. I decided
 to refocus my development and learning skills.
 
-Firstly, p-xo is a bit on-hold. I realized that coding it with Laravel + InertiaJS + VueJS might not
+Firstly, p-xo is a bit on-hold. I realized that coding it with Laravel + InertiaJS + Vue.js might not
 be the best strategy. I know it's a MVP, but since I'm the only one working on it, I need to make it
 worth my while. Laravel-Inertia-Vue (let's call that "LIV" for now) is great to get something off the ground
 quickly, but it also means locking it in to that ecosystem, which leads me to my second point...

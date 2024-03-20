@@ -4,8 +4,7 @@ start:   1997
 end:    1999
 year:   1997
 skills: 
-  - html
-  - css
+  - HTML/CSS
   - static website design
   - geocities
 #logo:

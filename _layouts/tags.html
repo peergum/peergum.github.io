@@ -17,7 +17,6 @@ layout: page
 {% for i in (1..tags_max) reversed %}
   {% assign tag_names = "" %}
   {% assign first_tag = true %}
-
   {% for tag in site.tags %}
     {% if tag[1].size == i %}
       {% if first_tag %}

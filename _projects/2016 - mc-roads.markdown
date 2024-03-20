@@ -4,11 +4,11 @@ start:   2016
 end:    2016
 year:   2016
 skills:
-  - PHP
+  - php
   - Laravel
   - AWS EC2
   - AWS RDS
-  - VueJS
+  - vue.js
   - Google Maps APIs
 locations:
   - "Vancouver, BC"
@@ -35,5 +35,5 @@ really intuitive or convenient, so I decided to build my own site, and called it
 bought the domain name to go with it.
 
 The site went relatively fast to build, with the assistance of google APIs for geolocation and routing, and I used Laravel
-and VueJS for the framework. That's when I realized it would be nice to have a tracker on my bike, which led me to 
+and Vue.Js for the framework. That's when I realized it would be nice to have a tracker on my bike, which led me to 
 jump to my next project, a Motorcycle Tracker.

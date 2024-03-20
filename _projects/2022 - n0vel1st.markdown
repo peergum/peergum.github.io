@@ -6,8 +6,8 @@ skills:
   - esp32
   - raspberry pi
 #  - php
-#  - laravel
-#  - vuejs
+#  - Laravel
+#  - vue.js
 locations:
   - "Kitchener, ON"
 thumbnail:

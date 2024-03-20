@@ -7,7 +7,7 @@ categories:
   - Coding
   - Jobs
   - Taxes
-tags: weekly activity coding learning golang java ANTLR4 languages
+tags: weekly activity coding learning golang java ANTLR4 languages 1BRC
 image:
   thumbnail: /assets/images/grammar_parser_AI.jpg
   name: "AI generated grammar parser... go figure!"

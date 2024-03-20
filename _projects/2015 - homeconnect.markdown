@@ -4,7 +4,7 @@ start:   2015
 end:    2015
 year:   2015
 skills:
-  - PHP
+  - php
   - Bootstrap
   - Javascript
   - jQuery

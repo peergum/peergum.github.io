@@ -4,9 +4,9 @@ start:   2015
 end:    2015
 year:   2015
 skills:
-  - PHP
-  - Symphony
-  - Javascript
+  - php
+  - symphony
+  - javascript
   - jQuery
   - HTML/CSS
   - AWS EC2

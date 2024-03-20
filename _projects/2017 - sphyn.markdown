@@ -4,9 +4,9 @@ start:   2017
 end:    2017
 year:   2017
 skills:
-  - PHP
+  - php
   - Laravel
-  - VueJS
+  - vue.js
   - HTML/CSS
   - AWS EC2
   - AWS RDS
