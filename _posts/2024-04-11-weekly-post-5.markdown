@@ -20,13 +20,13 @@ and I didn't see the time fly. That should tell me I should start doing planning
 Anyways, today I'm going to just talk about Open Source and its potential pitfalls.
 
 I've been using open-source code for ages, personally and professionally. I've been contributing to
-the community too, in the best of my abilities. And yet, as great and amazing it is, there are
+the community too, to the best of my abilities. And yet, as great and amazing it is, there are
 strong pitfalls that most people tend to ignore, including myself. The recent news about the
 [xz utils backdoor][xz] have been an eye opener. But let's start from what open-source code is, and
 how I and other people use it.
 
 Most obvious case is bundled software. For instance, if you want to set up a web
-site or blog for yourself and you're no developer, then the easiest is to go to Wordpress.com (or
+site or blog for yourself and you're no developer, then the easiest is to go to wordpress.com (or
 any equivalent) and just create your blog. Done. You're in business. And you're indirectly using
 open-source software (with possible added proprietary components). Yay! You assume wordpress.com
 is a great business, and maybe you even pay them for additional services, because you trust them:
@@ -36,11 +36,11 @@ If you're a web admin, a simple web developer or web designer, then you might ju
 and grab the whole package, or even more likely, your hosting provider already offers the option to
 install it for you. You're now really using explicitly an open-source package. You may tune it the
 way you want, adding plugins and themes, and whatever other stuff you can grab and is free, and
-make it your new home online. Amazing! By the way, have you ever wonder *who* wrote all these
+make it your new home online. Amazing! By the way, have you ever wondered *who* wrote all these
 plugins and stuff?
 
 If you're a developer, and are assigned, or assign yourself, a project, you have usually two
-ways to handle it: either you build it from scratch, or you put someone else code together and
+ways to handle it: either you build it from scratch, or you put someone else's code together and
 add the glue to make it work. The former seems and is the long way home, and most people, myself
 included, would take the latter path to happiness (and hopefully pay). So the role of a developer
 often becomes one of an architect: find the best materials, and design a house that will use them,
@@ -51,7 +51,7 @@ approved them in the first place?
 In the three cases above, you're in the hand of a great unknown: people. The more people worked on
 an open-source project (the "building material"), the more chances it has been tested, inspected,
 reviewed, and approved. The smaller the project (like the ones I write on my own) the more you're
-in the hand of a small number of developers, and someone just one person. And that's when you're
+in the hand of a small number of developers, and sometimes even just one person. And that's when you're
 just in great danger...
 
 At the end of March this year, a German developer, Andres Freund, was wondering why his linux
@@ -59,7 +59,7 @@ system was slow when login in, and after some investigations that most people, i
 would likely **not** do, he figured that an open-source package he had installed actually had a
 backdoor in it. What is a backdoor you ask? Well, just imagine letting the door to your yard open,
 while you leave your house triple-locked and with the metallic blinds closed and the alarm system
-on, which alarm system may well be just besides the garden door.
+on, which alarm system may well be just beside the garden door.
 
 So, a widely used package had been corrupt by a developer that pretended patching fix and
 adding tests over a two years' period, while he was actually slowly planting and activating a
