@@ -1,0 +1,36 @@
+{% assign documents = site.posts | concat: site.projects %}
+{% assign names = documents | map: include.field | compact | uniq | sort %}
+
+<ul class="taxonomy-index">
+  {% for name in names %}
+    {% assign count = 0 %}
+    {% for document in documents %}
+      {% if document[include.field] contains name %}
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    <li>
+      <a href="#{{ name | slugify }}">
+        <strong>{{ name }}</strong> <span class="taxonomy-count">{{ count }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% for name in names %}
+  <section id="{{ name | slugify }}" class="taxonomy-section">
+    <h2 class="taxonomy-title">{{ name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for entry in documents %}
+        {% if entry[include.field] contains name %}
+          {% if entry.collection == 'projects' %}
+            {% include project-entry.html %}
+          {% else %}
+            {% include entry.html %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

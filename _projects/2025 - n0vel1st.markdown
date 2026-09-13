@@ -1,0 +1,14 @@
+---
+title: "n0vel1st — Display Progress (2025)"
+start: 2025
+year: 2025
+categories: ["Electronics", "AI"]
+tags: ["n0vel1st", "display", "AI"]
+skills:
+  - esp32
+  - AI
+  - AI-Assisted Development
+  - Display Programming
+  - Embedded Development
+---
+I returned to my n0vel1st project and made significant progress on the display, with help from AI. It was a chance to move an older project forward again.
