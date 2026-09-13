@@ -1,0 +1,13 @@
+---
+title: "6502 / Apple II Emulator (2025)"
+start: 2025
+year: 2025
+categories: ["Coding", "Electronics"]
+tags: ["6502", "apple-ii", "emulation", "esp32"]
+skills:
+  - C++
+  - esp32
+  - Emulation
+  - Embedded Development
+---
+I started writing a 6502 processor emulator in C++, with the goal of emulating an Apple II on an ESP32 microcontroller.
