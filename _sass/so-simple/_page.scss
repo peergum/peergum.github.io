@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* ==========================================================================
    Page
    ========================================================================== */
@@ -21,7 +23,7 @@
 .page-image, .page-feature {
   position: relative;
   text-align: center;
-  margin-top: (-1 * $site-logo-height) / 2;
+  margin-top: math.div(-1 * $site-logo-height, 2);
   margin-bottom: 2em;
   z-index: 1;
   justify-self: center;
@@ -48,11 +50,11 @@
   }
 
   @include breakpoint($medium) {
-    margin-top: (-1.5 * $site-logo-height) / 2;
+    margin-top: math.div(-1.5 * $site-logo-height, 2);
   }
 
   @include breakpoint($large) {
-    margin-top: (-2 * $site-logo-height) / 2;
+    margin-top: math.div(-2 * $site-logo-height, 2);
   }
 
   img {
