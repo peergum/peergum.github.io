@@ -86,6 +86,8 @@ plugins:
 
 # Collections
 collections:
+  bio:
+    output: false
   jobs:
     output: true
     permalink: /:collection/:path/
